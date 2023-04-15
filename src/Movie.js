@@ -4,6 +4,7 @@ import styles from './Movie.module.css';
 
 const API_URL = 'https://www.omdbapi.com?apikey=d074b1ca';
 
+
 const Movie = () => {
   const { id } = useParams();
   const [movie, setMovie] = React.useState(null);
@@ -28,6 +29,8 @@ const Movie = () => {
     }
   };
 
+  updateImgPosition();
+
 
   React.useEffect(() => {
     updateImgPosition();
@@ -37,13 +40,11 @@ const Movie = () => {
     };
   }, []);
 
-  updateImgPosition();
 
   if (!movie) {
     return <div>Loading...</div>;
   }
 
-  updateImgPosition();
 
 
   return (
