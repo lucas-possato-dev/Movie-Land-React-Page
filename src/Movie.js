@@ -43,6 +43,9 @@ const Movie = () => {
     return <div>Loading...</div>;
   }
 
+  updateImgPosition();
+
+
   return (
     <div ref={imgRef} className={`${styles.movieDetails} ${styles.fontRaleway}`}>
       <h2>{movie.Title}</h2>
