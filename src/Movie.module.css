@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+.movieDetails {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  max-width: 460px;
+  min-width: auto;
+  position: fixed;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  color: white;
+  background: black;
+  z-index: 999;
+  border-radius: 8px;
+  padding: 10px 10px 20px;
+}
+
+.fontRaleway {
+  font-family: 'Raleway', sans-serif ;
+}
+
+@media (max-width: 800px) {
+  .movieDetails {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+}
