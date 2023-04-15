@@ -28,7 +28,6 @@ const Movie = () => {
     }
   };
 
-  updateImgPosition();
 
   React.useEffect(() => {
     updateImgPosition();
@@ -37,6 +36,8 @@ const Movie = () => {
       window.removeEventListener('scroll', updateImgPosition);
     };
   }, []);
+
+  updateImgPosition();
 
   if (!movie) {
     return <div>Loading...</div>;
